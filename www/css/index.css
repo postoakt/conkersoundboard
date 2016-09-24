@@ -1,0 +1,111 @@
+
+@font-face{
+	font-family: IndieFlower;
+	src: url("../font/Indie-Flower/IndieFlower.ttf");
+}
+
+@keyframes toRed{
+	0% {
+		background-color: transparent;
+	}
+	100%{
+		background-color: red;
+	}
+}
+
+@keyframes toDefault{
+	0% {
+		background-color: red;
+	}
+	100%{
+		background-color: transparent;
+	}
+}
+
+.redAnimation{
+	animation-name: toRed;
+	animation-duration: .25s;
+	animation-fill-mode: forwards;
+}
+
+.defaultAnimation{
+	animation-name: toDefault;
+	animation-duration: .25s;
+	animation-fill-mode: forwards;
+}
+
+
+*, html, body{
+	margin: 0;
+	padding: 0;
+	font-family: IndieFlower;
+	color: white;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+body{
+	background-color: black;
+}
+
+.under-logo{
+	font-size: 32px;
+	text-shadow: 0 0 4px black;
+}
+
+.container{
+	background: url("../img/conkersbadfurday.jpg");
+	width: 100%;
+	background-size: 100%;
+	min-height: 100vh;
+	font-size: 24px;
+	text-align: center;
+	padding-bottom: 4px;
+}
+
+.audio-container{
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 0 4px 16px 4px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.audio-container:last-child{
+	margin-bottom: 0;
+}
+
+.audio-character{
+	text-align: left;
+	padding: 0 4px;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 3px;
+}
+
+.audio-line{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 4px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.audio-container .audio-line:last-child{
+	border-bottom: none;
+}
+
+.play-img{
+	display: inline;
+	padding: 0 8px 0 0;
+	position: relative;
+	bottom: 2px;
+	vertical-align: middle;
+}
+
+.bottom{
+	text-align: center;
+	margin: 8px auto;
+}
